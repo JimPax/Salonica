@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/main.js"></script>
+
+    <title>Salonica</title>
+</head>
+<body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item" id="n1"><a href="#about" class="navigation__link">About Thessaloniki</a></li>
+                <li class="navigation__item" id="n2"><a href="#activities" class="navigation__link">Activities</a></li>
+                <li class="navigation__item" id="n3"><a href="#locations" class="navigation__link">Popular places</a></li>
+                <li class="navigation__item" id="n4"><a href="#art" class="navigation__link">Steet art</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="header">
+        <header class="header__logo-box">
+            <img src="/img/logo.png" alt="Logo" class="header__logo">
+        </header>
+        
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Thessaloniki</span>
+                <span class="heading-primary--sub">A beautiful city</span>
+            </h1>
+            <a href="#locations" class="btn btn--white btn--animated btn--big">Discover the city</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-about" id="about">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    About Thessaloniki
+                </h2>
+            </div>
+            <div class="section-about__container">
+                <div class="section-about__text">
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                        You're going to fall in love with Thessaloniki
+                    </h3>
+                    <p class="paragraph">
+                        Thessaloniki is a popular tourist destination in Greece. In 2013, National Geographic Magazine included Thessaloniki in its top tourist destinations worldwide, while in 2014 Financial Times FDI magazine (Foreign Direct Investments) declared Thessaloniki as the best mid-sized European city of the future for human capital and lifestyle.Among street photographers, the center of Thessaloniki is also considered the most popular destination for street photography in Greece.
+                    </p>
+                    <p class="paragraph">
+                        During each year, Thessaloniki hosts significant cultural and commercial festivities, such as the Thessaloniki International Fair (every September), the International Thessaloniki Film Festival (every November) and the International Book Fair (every May).
+                    </p>
+                </div>
+                <div class="section-about__images">
+                    <div class="composition">
+                        <img src="img/hero.jpg" alt="Photo1" class="composition__photo composition__photo--p1">
+                        <img src="img/navarinou.jpg" alt="Photo2" class="composition__photo composition__photo--p2">
+                        <img src="img/kastra.jpg" alt="Photo3" class="composition__photo composition__photo--p3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-activities" id="activities">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary heading-secondary--white"> 
+                    Activities in the city
+                </h2>
+            </div>
+            <div class="section-activities__container">
+                <div class="section-activities__box">
+                    <div class="activity-box">
+                        <svg class="activity-box__icon activity-box__icon--i1">
+                            <use xlink:href="img/sprite.svg#icon-bicycle"></use>
+                        </svg>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Bike ride</h3>
+                        <p class="activity-box__text">
+                            If you want to go for a ride bike you can choose either a route with almost 5km bicycle path next to the sea or a cross-country paths in the forest of Seix Sou.
+                            At the center of the city you can find stores to rent a bike.
+                        </p>
+                    </div>
+                </div>
+                <div class="section-activities__box activity-box__icon--i2">
+                    <div class="activity-box">
+                        <svg class="activity-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-camera"></use>
+                        </svg>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Photography</h3>
+                        <p class="activity-box__text">
+                            The center of Thessaloniki is also the most popular destination for street photography in Greece. You can find a lot of graffiti on a whole buildings, 
+                            various mood scenes and places with an awesome view for a landscape photos.
+                        </p>
+                    </div>
+                </div>
+                <div class="section-activities__box activity-box__icon--i3">
+                    <div class="activity-box">
+                        <svg class="activity-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-sailing-boat-water"></use>
+                        </svg>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Boat ride</h3>
+                        <p class="activity-box__text">
+                            Theme boats are waiting for you for a ride in Theraic Gulf. Υou can choose the pirate ship to drink your rum or go to a techno party at night,
+                            finally you choose to drink your coffee and relax with reggae music.  
+                        </p>
+                    </div>
+                </div>
+                <div class="section-activities__box activity-box__icon--i4">
+                    <div class="activity-box">
+                        <svg class="activity-box__icon">
+                            <use xlink:href="img/sprite.svg#icon-local_bar"></use>
+                        </svg>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Night life</h3>
+                        <p class="activity-box__text">
+                            Thessaloniki is one of the best nightlife spots in Greece. Famous for its clubs that stay open all night long and for its cheerful atmosphere,
+                            Thessaloniki gets alive with young people strolling around the bars and cafeterias of the town.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-locations" id="locations">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary"> 
+                    Most popular places
+                </h2>
+            </div>
+            <div class="section-locations__container">
+                <div class="section-locations__card">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">
+                                    Kamara
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <h3 class="heading-tertiary u-margin-bottom-small">
+                                    Kamara, Thessaloniki
+                                </h3>
+                                <p class="paragraph">
+                                    The well known Kamara, one of Thessaloniki’s most famous monuments, constitutes a characteristic meeting spot for city’s inhabitants and visitors, 
+                                    situated at the junction of Egnatia and Dimitriou Gounari Street.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__cta">
+                                    <h4 class="card__name">
+                                        Kamara
+                                    </h4>
+                                <a href="#popup1" class="btn btn--white">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-locations__card">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">
+                                    Aristotelous
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <h3 class="heading-tertiary u-margin-bottom-small">
+                                    Aristotelous, Thessaloniki
+                                </h3>
+                                <p class="paragraph">
+                                    Aristotelous Square is the main city square of Thessaloniki, Greece and is located on Nikis avenue (on the city's waterfront), in the city center.
+                                     Aristotelous Square is one of the most famous places in all of Greece and almost synonymous with the city of Thessaloniki itself.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                    <h4 class="card__name">
+                                        Aristotelous
+                                    </h4>
+                                <a href="#popup2" class="btn btn--white">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-locations__card">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--3">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--3">
+                                    Seix sou
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <h3 class="heading-tertiary u-margin-bottom-small">
+                                    Seix sou, Thessaloniki
+                                </h3>
+                                <p class="paragraph">
+                                    Kedrinos Lofos, also known as Seix Sou, is a hilltop forest just to the north and northeast of the city of Thessaloniki, Greece, that rises to the west of Mount Chortiatis.
+                                     The forest covers 2,979 hectares (7,361 acres) and reaches an elevation of 563 meters (1,847 feet).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                    <h4 class="card__name">
+                                        Seix sou
+                                    </h4>
+                                <a href="#popup3" class="btn btn--white">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-art" id="art">
+            <div class="u-center-text u-margin-bottom-big section-art__heading">
+                <h2 class="heading-secondary heading-secondary--white">
+                    Street Art
+                </h2>
+            </div>
+            <div class="section-art__container">
+                <ul class="art-box">
+                    <li class="art-box__item">
+                        <figure class="art-box__figure">
+                        <img src="img/art grafiti/g1.jpg" alt="" class="art-box__image">
+                        <figcaption class="art-box__caption">An awesome story</figcaption>
+                    </figure>
+                    </li>
+                    <li class="art-box__item">
+                        <figure class="art-box__figure">
+                        <img src="img/art grafiti/g2.jpg" alt="" class="art-box__image">
+                        <figcaption class="art-box__caption">An awesome story</figcaption>
+                    </figure>
+                    </li>
+                    <li class="art-box__item">
+                        <figure class="art-box__figure">
+                        <img src="img/art grafiti/g3.jpg" alt="" class="art-box__image">
+                        <figcaption class="art-box__caption">An awesome story</figcaption>
+                    </figure>
+                    </li>
+                    <li class="art-box__item">
+                        <figure class="art-box__figure">
+                        <img src="img/art grafiti/g4.jpg" alt="" class="art-box__image">
+                        <figcaption class="art-box__caption">An awesome story</figcaption>
+                    </figure>
+                    </li>
+                    <li class="art-box__item">
+                        <figure class="art-box__figure">
+                        <img src="img/art grafiti/g5.jpg" alt="" class="art-box__image">
+                        <figcaption class="art-box__caption">An awesome story</figcaption>
+                    </figure>
+                    </li>
+                    <li class="art-box__item">
+                        <figure class="art-box__figure">
+                        <img src="img/art grafiti/g6.jpg" alt="" class="art-box__image">
+                        <figcaption class="art-box__caption">An awesome story</figcaption>
+                    </figure>
+                    </li>
+                    <li class="art-box__item">
+                        <figure class="art-box__figure">
+                        <img src="img/art grafiti/g7.jpg" alt="" class="art-box__image">
+                        <figcaption class="art-box__caption">An awesome story</figcaption>
+                    </figure>
+                    </li>
+                    <li class="art-box__item">
+                        <figure class="art-box__figure">
+                        <img src="img/art grafiti/g8.jpg" alt="" class="art-box__image">
+                        <figcaption class="art-box__caption">An awesome story</figcaption>
+                    </figure>
+                    </li>
+                    <li class="art-box__item">
+                        <figure class="art-box__figure">
+                        <img src="img/art grafiti/g9.jpg" alt="" class="art-box__image">
+                        <figcaption class="art-box__caption">An awesome story</figcaption>
+                    </figure>
+                    </li>
+                    <li class="art-box__item">
+                        <figure class="art-box__figure">
+                        <img src="img/art grafiti/g10.jpeg" alt="" class="art-box__image">
+                        <figcaption class="art-box__caption">An awesome story</figcaption>
+                    </figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <div>
+                <img src="img/logo.png" alt="Full logo" class="footer__logo">
+            </div>
+        </div>
+        <div class="footer__content">
+            <p class="footer__copyright">
+                A presantation site for the<a href="https://www.google.com/search?sxsrf=ALeKk02ZdKVB7U5zNCdxXVkl3w20v6QyXA%3A1608985890789&ei=Ii3nX8DeL8XKgwemtL7YAg&q=thessaloniki" class="footer__link">city of Thessaloniki</a> by <a href="https://jimpax.netlify.app/" class="footer__link">Jim Pax</a>.
+            </p>
+        </div>
+        
+    </footer>
+
+    <!-- POPUP -->
+    <div class="popup" id="popup1">
+        <div class="popup__content">
+            <a href="#section-locations" class="popup__close">&times;</a>
+            <div class="popup__left">
+                <img src="img/k1.jpg" alt="Tour photo" class="popup__img">
+                <img src="img/k2.png" alt="Tour photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <h2 class="heading-secondary u-margin-bottom-small">Kamara</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Nauarinou</h3>
+                <p class="popup__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime officiis ipsum itaque sit numquam? Molestiae temporibus amet vel, totam vero reprehenderit consequuntur velit dicta aperiam, doloremque iure magnam, excepturi accusamus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae accusantium est dolor qui accusamus. Dolor et perspiciatis, unde minus fugit explicabo saepe recusandae. Repellat natus excepturi praesentium perspiciatis consequuntur aperiam!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup2">
+        <div class="popup__content">
+            <a href="#section-locations" class="popup__close">&times;</a>
+            <div class="popup__left">
+                <img src="img/ar1.jpg" alt="Tour photo" class="popup__img">
+                <img src="img/ar2.jpg" alt="Tour photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <h2 class="heading-secondary u-margin-bottom-small">Aristotelous</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">The city center</h3>
+                <p class="popup__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime officiis ipsum itaque sit numquam? Molestiae temporibus amet vel, totam vero reprehenderit consequuntur velit dicta aperiam, doloremque iure magnam, excepturi accusamus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae accusantium est dolor qui accusamus. Dolor et perspiciatis, unde minus fugit explicabo saepe recusandae. Repellat natus excepturi praesentium perspiciatis consequuntur aperiam!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup3">
+        <div class="popup__content">
+            <a href="#section-locations" class="popup__close">&times;</a>
+            <div class="popup__left">
+                <img src="img/sx3.jpg" alt="Tour photo" class="popup__img">
+                <img src="img/sx1.jpg" alt="Tour photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <h2 class="heading-secondary u-margin-bottom-small">Seix sou</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">The city forest</h3>
+                <p class="popup__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime officiis ipsum itaque sit numquam? Molestiae temporibus amet vel, totam vero reprehenderit consequuntur velit dicta aperiam, doloremque iure magnam, excepturi accusamus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae accusantium est dolor qui accusamus. Dolor et perspiciatis, unde minus fugit explicabo saepe recusandae. Repellat natus excepturi praesentium perspiciatis consequuntur aperiam!
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
