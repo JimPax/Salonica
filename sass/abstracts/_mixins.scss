@@ -1,0 +1,44 @@
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERY MANAGER
+/*
+0 - 360px: Small phone
+360 - 600px: Phone
+600 - 768px: Tablet portrait - Phone rotate
+768 - 992px: Tablet landscape
+992 - 1200px: Laptop
+1200 - 1400px: Desktop
+1400px +: Desktop big(normal style Desktop First) 
+
+$breakpoint argument choices
+- phone
+- tablet
+- laptop
+
+1em = 16px default font size | breakpoin to pixel / 16 = breakpoint to em (ex. 600px / 16px = 37.5em)
+*/
+@mixin respond($breakpoind) {
+    @if $breakpoind == sphone {
+        @media screen and (max-width: 22.5em) { @content }; 
+    }
+    @if $breakpoind == phone {
+        @media screen and (max-width: 37.5em) { @content }; 
+    }
+    @if $breakpoind == tab-port {
+        @media screen and (max-width: 48em) { @content }; 
+    }
+    @if $breakpoind == tab-land {
+        @media screen and (max-width: 62em) { @content }; 
+    }
+    @if $breakpoind == laptop {
+        @media screen and (max-width: 75em) { @content }; 
+    }
+    @if $breakpoind == desktop {
+        @media screen and (max-width: 87.5em) { @content };
+    }
+}

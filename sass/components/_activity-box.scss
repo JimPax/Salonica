@@ -1,0 +1,62 @@
+.activity-box {
+    background-color: rgba($color-white, .8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    transition: transform .3s;
+    // width: 35rem;
+    height: 40rem;
+
+    @include respond(desktop){
+        height: 40rem;
+        padding: 2rem;
+    }
+
+    @include respond(laptop){
+        height: 40rem;
+    }
+
+    @include respond(tab-land){
+        height: 25rem;
+        margin-bottom: 2rem;
+    }
+
+    @include respond(phone){
+        height: 30rem;
+        margin-bottom: 2rem;
+    }
+
+    &__icon{
+        height: 7.5rem;
+        width: 7.5rem;
+        margin-bottom: 1rem;
+        // fill: $color-tertiary-light;
+
+        // @include respond(tab-port){
+        //     margin-bottom: 0;
+        // }
+    
+        &--i1 {
+            fill: $color-secondary-dark;
+        }
+
+        &--i2 {
+            fill: $color-tertiary-light;
+        }
+
+        &--i3 {
+            fill: $color-primary-dark;
+        }
+
+        &--i4 {
+            fill: $color-tertiary-dark;
+        }
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+}
+

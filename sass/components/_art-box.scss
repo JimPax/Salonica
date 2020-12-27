@@ -1,0 +1,88 @@
+.art-box {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  
+
+  &__item,&__figure {
+      height: 30vh;
+      flex-grow: 1;
+      margin: 1rem;
+      position: relative;
+
+      &__item:last-child {
+          flex-grow: 10;
+      }
+  }
+
+  &__image {
+      max-height: 100%;
+      min-width: 100%;
+      object-fit: cover;
+      vertical-align: bottom;
+      border: 4px solid $color-primary;
+      transition: all .6s;
+      
+      &:hover {
+          position: relative;
+          transform: scale(1.1);
+          z-index: 10;
+          filter: blur(4px) brightness(80%);
+      }
+
+  }
+
+  &__caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden;
+    z-index: 20;
+  }
+  
+  &__figure:hover &__caption {
+    opacity:1;
+  }
+}
+
+// Portrait
+
+@media (max-aspect-ratio: 1/1) {
+  .art-box__item, .art-box__figure {
+    height: 30vh;
+  }
+}
+
+// Short screens
+
+@media (max-height: 800px) {
+  .art-box__item, .art-box__figure {
+    height: 80vh;
+  }
+}
+
+// Smaller screens in portrait
+
+@media (max-aspect-ratio: 1/1) and (max-width: 800px) {
+  .art-box {
+    flex-direction: row;
+  }
+
+  .art-box__item, .art-box__figure {
+    height: auto;
+    width: 100%;
+  }
+  .art-box__image {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}
+
