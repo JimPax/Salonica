@@ -55,16 +55,16 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),url(../img/kamara.jpg);
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),url(../img/kamara.webp);
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),url(../img/aristotelous.jpg);
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),url(../img/aristotelous.webp);
             background-position: center;
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),url(../img/seixsou.jpg);
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),url(../img/seixsou.webp);
         }
     }
 
